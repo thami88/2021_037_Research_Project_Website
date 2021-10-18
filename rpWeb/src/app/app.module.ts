@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -79,17 +80,16 @@ import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzResizableModule } from 'ng-zorro-antd/resizable';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 
+// App Component
+import { HomeComponent } from './pages/home/home.component';
+
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    BrowserModule,
+    ScrollingModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
