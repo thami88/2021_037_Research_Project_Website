@@ -105,7 +105,7 @@
       <div nz-row style="margin-top: 20px" id="milestone">
         <div nz-col nzFlex="auto">
           <nz-card [nzExtra]="TimelineSection" nzTitle="Milestones">
-            <nz-steps [nzCurrent]="4" nzDirection="vertical" nzSize="small">
+            <nz-steps [nzCurrent]="4" nzDirection="vertical">
               <nz-step
                 nzIcon="file-done"
                 nzTitle="Finished"
@@ -150,32 +150,320 @@
         </div>
       </div>
       <div nz-row style="margin-top: 20px" id="documents">
-        <nz-card [nzExtra]="DocumentSection" nzTitle="Documents">
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre>Project Charter
-            <a href="https://drive.google.com/file/d/120rMgomOYYrQMRaPeE3DhvgfPNooFoak/view?usp=sharing">Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre> Project Proposal Documents
-            <a>Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre>Research Log Books
-            <a>Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre>Status Documets
-            <a>Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre>Final Documents
-            <a>Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-          <div nz-card-grid [ngStyle]="gridStyle">
-            <pre>Reserach Paper
-            <a>Download <i nz-icon nzType="download"></i></a></pre>
-          </div>
-        </nz-card>
+        <div nz-col nzFlex="auto">
+          <nz-card [nzExtra]="DocumentSection" nzTitle="Documents">
+            <nz-divider nzDashed nzOrientation="left" [nzText]="grpDoc">
+              <ng-template #grpDoc>
+                <i nz-icon nzType="team" nzTheme="outline"></i>
+                Group Documets
+              </ng-template>
+            </nz-divider>
+            <div nz-row [nzGutter]="8">
+              <div nz-col [nzSpan]="8">
+                <nz-card
+                  [nzHoverable]="true"
+                  [nzHoverable]="true"
+                  nzTitle="Presentations"
+                >
+                  <p>Project Proposal</p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://drive.google.com/file/d/120rMgomOYYrQMRaPeE3DhvgfPNooFoak/view?usp=sharing"
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Progress Presentation - 1</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Progress Presentation - 2</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Presentation</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="8">
+                <nz-card [nzHoverable]="true" nzTitle="Reports & Poster">
+                  <p>Research Paper</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Poster</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="8">
+                <nz-card [nzHoverable]="true" nzTitle="Project Registration">
+                  <p>Project Charter</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Topic Assesment</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View / Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+            </div>
+            <nz-divider nzDashed nzOrientation="left" [nzText]="indDoc">
+              <ng-template #indDoc>
+                <i nz-icon nzType="user" nzTheme="outline"></i>
+                Idividual Documets
+              </ng-template>
+            </nz-divider>
+            <div nz-row [nzGutter]="8">
+              <div nz-col [nzSpan]="6">
+                <nz-card [nzHoverable]="true" nzTitle="IT18009682">
+                  <p>Project Proposal Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 01</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 02</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Log Book</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card [nzHoverable]="true" nzTitle="IT18022698">
+                  <p>Project Proposal Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 01</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 02</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Log Book</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card [nzHoverable]="true" nzTitle="IT18118650">
+                  <p>Project Proposal Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 01</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 02</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Log Book</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card [nzHoverable]="true" nzTitle="IT18177688">
+                  <p>Project Proposal Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 01</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Final Report</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Status Document - 02</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <p>Log Book</p>
+                  <ul>
+                    <li>
+                      <a href=""
+                        >View or Download
+                        <i nz-icon nzType="select" nzTheme="outline"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nz-card>
+              </div>
+            </div>
+          </nz-card>
+        </div>
         <ng-template #DocumentSection>
           <i nz-icon nzType="file" nzTheme="outline"></i>
         </ng-template>
@@ -183,6 +471,57 @@
       <div nz-row style="margin-top: 20px" id="team">
         <div nz-col nzFlex="auto">
           <nz-card nzTitle="Team" [nzExtra]="TeamSection">
+            <nz-divider
+              nzText="Supervisor Pannel"
+              nzOrientation="left"
+            ></nz-divider>
+            <div nz-row [nzGutter]="8">
+              <div nz-col [nzSpan]="8">
+                <nz-card [nzHoverable]="true" nzTitle="Dr. Dasuni Nawinna">
+                  <p><strong>Supervisor Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p><span nz-typography>Assistant Professor</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >FACULTY OF COMPUTING | COMPUTER SYSTEMS
+                          ENGINEERING</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="8">
+                <nz-card [nzHoverable]="true" nzTitle="Ms. Buddhima Attanayaka">
+                  <p><strong>Co-Supervisor Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p><span nz-typography>Instructorr</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >FACULTY OF COMPUTING | COMPUTER SYSTEMS
+                          ENGINEERING</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+              </div>
+              <div nz-col [nzSpan]="8">
+                <nz-card [nzHoverable]="true" nzTitle="Card title">
+                  <p>Card content</p>
+                </nz-card>
+              </div>
+            </div>
+            <nz-divider
+              nzText="Research Team"
+              nzOrientation="left"
+            ></nz-divider>
             <div nz-row [nzGutter]="8">
               <div nz-col [nzSpan]="6">
                 <nz-card
@@ -336,11 +675,71 @@
         </div>
       </div>
       <div nz-row style="margin-top: 20px" id="contact">
+        <div nz-col nzFlex="50%">
+          <nz-card [nzBordered]="false" [nzCover]="contactImage"> </nz-card>
+          <ng-template #contactImage>
+            <img
+              alt="example"
+              src="https://drive.google.com/uc?export=view&id=1NaKORF2RV3KTURQdCupbOA3A4Un6Z629"
+            />
+          </ng-template>
+        </div>
         <div nz-col nzFlex="auto">
-          <nz-card nzTitle="Contact">hhh</nz-card>
+          <nz-card nzTitle="Contact">
+            <form
+              nz-form
+              [formGroup]="validateForm"
+              class="login-form"
+              (ngSubmit)="submitForm()"
+            >
+              <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your username!">
+                  <nz-input-group nzPrefixIcon="user">
+                    <input
+                      type="text"
+                      nz-input
+                      formControlName="userName"
+                      placeholder="Username"
+                    />
+                  </nz-input-group>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Email!">
+                  <nz-input-group nzPrefixIcon="mail">
+                    <input
+                      type="text"
+                      nz-input
+                      formControlName="email"
+                      placeholder="email"
+                    />
+                  </nz-input-group>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Message!">
+                  <nz-input-group nzPrefixIcon="message">
+                    <input
+                      type="text"
+                      nz-input
+                      formControlName="message"
+                      placeholder="message"
+                    />
+                  </nz-input-group>
+                </nz-form-control>
+              </nz-form-item>
+              <button
+                nz-button
+                class="login-form-button login-form-margin"
+                [nzType]="'primary'"
+              >
+                Send Message
+              </button>
+            </form>
+          </nz-card>
         </div>
       </div>
     </div>
   </nz-content>
-  <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  <nz-footer>Implement By 2021-037 Research Group</nz-footer>
 </nz-layout>
