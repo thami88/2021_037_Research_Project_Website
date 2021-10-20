@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   // card
   gridStyle = {
-    width: '25%',
+    width: 'auto',
     textAlign: 'center',
   };
 

@@ -15,97 +15,331 @@
     </nz-breadcrumb>
     <div class="inner-content">
       <nz-carousel [nzEffect]="effect">
-        <div nz-carousel-content *ngFor="let index of array">
-          <h3>{{ index }}</h3>
+        <div nz-carousel-content>
+          <img
+            src="https://y6b8k9e7.stackpathcdn.com/wp-content/uploads/2017/08/machine-learning-hand-robot-touching-computer-chip-binary-data.jpg"
+            alt=""
+          />
         </div>
       </nz-carousel>
-      <div nz-row id="scope">
-        <article nz-typography>
-          <h1 nz-typography>Introduction</h1>
-          <p nz-typography>
-            In the process of internal desktop applications development, many
-            different design specs and implementations would be involved, which
-            might cause designers and developers difficulties and duplication
-            and reduce the efficiency of development.
-          </p>
-          <p nz-typography>
-            After massive project practice and summaries, Ant Design, a design
-            language for backgroundapplications, is refined by Ant UED Team,
-            which aims to
-            <span nz-typography>
-              <strong>
-                uniform the user interface specs for internal background
-                projects, lower the unnecessary cost of design differences and
-                implementation and liberate the resources ofdesign and front-end
-                development
-              </strong>
-            </span>
-            .
-          </p>
-          <h2 nz-typography>Guidelines and Resources</h2>
-          <p nz-typography>
-            We supply a series of design principles, practical patterns and high
-            quality design resources (
-            <span nz-typography><code>Sketch</code></span>
-            and
-            <span nz-typography><code>Axure</code></span>
-            ), to help people create their product prototypes beautifully and
-            efficiently.
-          </p>
-          <div nz-typography>
-            <ul>
-              <li>
-                <a href="/docs/spec/proximity">Principles</a>
-              </li>
-              <li>
-                <a href="/docs/pattern/navigation">Patterns</a>
-              </li>
-              <li>
-                <a href="/docs/resource/download">Resource Download</a>
-              </li>
-            </ul>
-          </div>
-          <p nz-typography>
-            Press
-            <span nz-typography><kbd>Esc</kbd></span>
-            to exist...
-          </p>
-        </article>
+      <div nz-row style="margin-top: 20px" id="scope">
+        <nz-card style="width: 100%">
+          <nz-card-tab>
+            <nz-tabset nzSize="large">
+              <nz-tab nzTitle="LITERATURE SURVEY">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+              <nz-tab nzTitle="RESEARCH GAP">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+              <nz-tab nzTitle="RESEARCH PROBLEM">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+              <nz-tab nzTitle="RESEARCH OBJECTIVES">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+              <nz-tab nzTitle="METHODOLOGY">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+              <nz-tab nzTitle="TECHNOLOGY">
+                <article nz-typography>
+                  <h1 nz-typography>Introduction</h1>
+                  <p nz-typography>
+                    In the process of internal desktop applications development,
+                    many different design specs and implementations would be
+                    involved, which might cause designers and developers
+                    difficulties and duplication and reduce the efficiency of
+                    development.
+                  </p>
+                </article>
+              </nz-tab>
+            </nz-tabset>
+          </nz-card-tab>
+        </nz-card>
       </div>
-      <div nz-row id="milestone">
-        <div nz-col nzFlex="400px">
-          <nz-card>
-            <nz-steps [nzCurrent]="1" nzDirection="vertical">
+      <div nz-row style="margin-top: 20px" id="milestone">
+        <div nz-col nzFlex="auto">
+          <nz-card [nzExtra]="TimelineSection" nzTitle="Milestones">
+            <nz-steps [nzCurrent]="4" nzDirection="vertical" nzSize="small">
               <nz-step
+                nzIcon="file-done"
                 nzTitle="Finished"
-                nzDescription="This is a description."
+                nzSubtitle="Project Proposal"
+                nzDescription="Demonstrate the Individula Components expec to develop within the year to achive the final system"
               ></nz-step>
               <nz-step
+                nzIcon="fund-projection-screen"
+                nzTitle="Finished"
+                nzSubtitle="Progress Presentation 1"
+                nzDescription="Demonstation the progress at the moment percentage of the progress (50%)"
+              ></nz-step>
+              <nz-step
+                nzIcon="fund-view"
+                nzTitle="Finished"
+                nzSubtitle="Progress Presentation 2"
+                nzDescription="In this presentation, Demonstrate 90% of the progress done by the group memebers"
+              ></nz-step>
+              <nz-step
+                nzIcon="play-square"
+                nzTitle="Finished"
+                nzSubtitle="Demo"
+                nzDescription="Give a better view of the progress at the moment to the audience"
+              ></nz-step>
+              <nz-step
+                nzIcon="loading"
                 nzTitle="In Progress"
-                nzDescription="This is a description."
+                nzSubtitle="Final Assessment"
+                nzDescription="Demonstrate the final Web application done by the group memebers"
               ></nz-step>
               <nz-step
+                nzIcon="team"
                 nzTitle="Waiting"
-                nzDescription="This is a description."
+                nzSubtitle="Viva"
+                nzDescription="Explained each individual component and answered the question asked by the panel"
               ></nz-step>
             </nz-steps>
           </nz-card>
+          <ng-template #TimelineSection>
+            <i nz-icon nzType="project" nzTheme="outline"></i>
+          </ng-template>
         </div>
-        <div nz-col nzFlex="auto"><nz-card></nz-card></div>
       </div>
-      <div nz-row id="documents">
-        <nz-card nzTitle="Cart Title">
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
-          <div nz-card-grid [ngStyle]="gridStyle">Content</div>
+      <div nz-row style="margin-top: 20px" id="documents">
+        <nz-card [nzExtra]="DocumentSection" nzTitle="Documents">
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre>Project Charter
+            <a href="https://drive.google.com/file/d/120rMgomOYYrQMRaPeE3DhvgfPNooFoak/view?usp=sharing">Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre> Project Proposal Documents
+            <a>Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre>Research Log Books
+            <a>Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre>Status Documets
+            <a>Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre>Final Documents
+            <a>Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
+          <div nz-card-grid [ngStyle]="gridStyle">
+            <pre>Reserach Paper
+            <a>Download <i nz-icon nzType="download"></i></a></pre>
+          </div>
         </nz-card>
+        <ng-template #DocumentSection>
+          <i nz-icon nzType="file" nzTheme="outline"></i>
+        </ng-template>
       </div>
-      <div nz-row id="team"></div>
-      <div nz-row id="contact"></div>
+      <div nz-row style="margin-top: 20px" id="team">
+        <div nz-col nzFlex="auto">
+          <nz-card nzTitle="Team" [nzExtra]="TeamSection">
+            <div nz-row [nzGutter]="8">
+              <div nz-col [nzSpan]="6">
+                <nz-card
+                  [nzHoverable]="true"
+                  [nzCover]="member1Image"
+                  nzTitle="Eheliyagoda D.R.M.R.R.D.R.S"
+                >
+                  <p><strong>Member Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p
+                          nz-typography
+                          nzCopyable
+                          nzCopyText="IT18009682@my.sliit.lk"
+                        >
+                          IT18009682@my.sliit.lk
+                        </p>
+                      </li>
+                      <li>
+                        <p><span nz-typography>IT18009682</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >Facalty of Computing</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+                <ng-template #member1Image>
+                  <img
+                    alt="example"
+                    src="https://drive.google.com/uc?export=view&id=1NaKORF2RV3KTURQdCupbOA3A4Un6Z629"
+                  />
+                </ng-template>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card
+                  [nzHoverable]="true"
+                  [nzCover]="member2Image"
+                  nzTitle="Nilmini D.P.Y.C.A"
+                >
+                  <p><strong>Member Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p
+                          nz-typography
+                          nzCopyable
+                          nzCopyText="IT18022698@my.sliit.lk"
+                        >
+                          IT18022698@my.sliit.lk
+                        </p>
+                      </li>
+                      <li>
+                        <p><span nz-typography>IT18022698</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >Facalty of Computing</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+                <ng-template #member2Image>
+                  <img
+                    alt="example"
+                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  />
+                </ng-template>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card
+                  [nzHoverable]="true"
+                  [nzCover]="member3Image"
+                  nzTitle="Jayasooriya D.C."
+                >
+                  <p><strong>Member Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p
+                          nz-typography
+                          nzCopyable
+                          nzCopyText="IT18118650@my.sliit.lk"
+                        >
+                          IT18118650@my.sliit.lk
+                        </p>
+                      </li>
+                      <li>
+                        <p><span nz-typography>IT18118650</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >Facalty of Computing</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+                <ng-template #member3Image>
+                  <img
+                    alt="example"
+                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  />
+                </ng-template>
+              </div>
+              <div nz-col [nzSpan]="6">
+                <nz-card
+                  [nzHoverable]="true"
+                  [nzCover]="member4Image"
+                  nzTitle="Liyanage T.K.G"
+                >
+                  <p><strong>Member Details</strong></p>
+                  <div nz-typography>
+                    <ul>
+                      <li>
+                        <p
+                          nz-typography
+                          nzCopyable
+                          nzCopyText="IT18177688@my.sliit.lk"
+                        >
+                          IT18177688@my.sliit.lk
+                        </p>
+                      </li>
+                      <li>
+                        <p><span nz-typography>IT18177688</span></p>
+                      </li>
+                      <li>
+                        <span nz-typography nzType="secondary"
+                          >Facalty of Computing</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nz-card>
+                <ng-template #member4Image>
+                  <img
+                    alt="example"
+                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  />
+                </ng-template>
+              </div>
+            </div>
+          </nz-card>
+          <ng-template #TeamSection>
+            <i nz-icon nzType="team" nzTheme="outline"></i>
+          </ng-template>
+        </div>
+      </div>
+      <div nz-row style="margin-top: 20px" id="contact">
+        <div nz-col nzFlex="auto">
+          <nz-card nzTitle="Contact">hhh</nz-card>
+        </div>
+      </div>
     </div>
   </nz-content>
   <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
