@@ -81,3 +81,7 @@ h3 {
 .login-form-button {
   width: 100%;
 }
+
+li {
+  background-color: transparent !important;
+}
