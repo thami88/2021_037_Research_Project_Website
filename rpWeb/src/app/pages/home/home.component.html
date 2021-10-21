@@ -17,14 +17,14 @@
       <nz-carousel [nzEffect]="effect">
         <div nz-carousel-content>
           <img
-            src="https://y6b8k9e7.stackpathcdn.com/wp-content/uploads/2017/08/machine-learning-hand-robot-touching-computer-chip-binary-data.jpg"
-            alt=""
+            src="https://res.cloudinary.com/dtu17sm2a/image/upload/v1634836584/pexels-mehrad-vosoughi-3687999_mn1mwj.jpg"
+            alt="cover-img"
           />
         </div>
       </nz-carousel>
       <div nz-row style="margin-top: 20px" id="scope">
         <!-- <nz-card style="width: 100%; background-color: #d7e9f7"></nz-card> -->
-        <nz-card style="width: 100%">
+        <nz-card style="width: 100%" nzTitle="Scope">
           <nz-card-tab>
             <nz-tabset nzSize="large">
               <nz-tab nzTitle="Introduction">
@@ -224,16 +224,16 @@
                 </article>
               </nz-tab>
               <nz-tab nzTitle="Methodology">
-                <article nz-typography>
-                  <h1 nz-typography>Introduction</h1>
-                  <p nz-typography style="text-align: justify">
-                    In the process of internal desktop applications development,
-                    many different design specs and implementations would be
-                    involved, which might cause designers and developers
-                    difficulties and duplication and reduce the efficiency of
-                    development.
-                  </p>
-                </article>
+                <div nz-col nzFlex="50%">
+                  <nz-card [nzBordered]="false" [nzCover]="MethodologyImg">
+                  </nz-card>
+                  <ng-template #MethodologyImg>
+                    <img
+                      alt="High Level System Architecture Diagram"
+                      src="https://res.cloudinary.com/dtu17sm2a/image/upload/v1634837166/System_Diagram_2_baqiui.png"
+                    />
+                  </ng-template>
+                </div>
               </nz-tab>
               <nz-tab nzTitle="Technology">
                 <article nz-typography>
@@ -842,7 +842,7 @@
           <ng-template #contactImage>
             <img
               alt="example"
-              src="https://res.cloudinary.com/dtu17sm2a/image/upload/v1634823704/p1_m1l80x.png"
+              src="https://res.cloudinary.com/dtu17sm2a/image/upload/v1634836823/fd4e98ed82858f8096a115a250b1d51f_i2zlqc.png"
             />
           </ng-template>
         </div>
